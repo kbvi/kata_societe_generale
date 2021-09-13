@@ -1,7 +1,15 @@
 Pour résoudre ce problème j'ai choisi de créer un service s'appelant *"BankService"* qui porterait l'ensemble des us1, us2, et us3.
+
+
 L'architecture de cette solution s'inspire d'un pattern d'architecture en couche. Il est tout de même sans dépendance et approximé.
-Cependant, j'ai profité énormément de la généricité du projet que m'inspirait l'énoncé et de **la similarité à plusieurs de mes précédents projets. En effet, j'ai réutilisé une grande partie de leurs structures en ayant conscience que ça a grandement influencé mon implémentation, notamment sur la généricité des tests**. Cette généricité, si elle amène trop d'abstraction, peut être aisément réduite en enlvant les mécanismes d'implicites ou de subtype et en dupliquant le code.
+
+
+Cependant, j'ai énormément profité de la généricité du projet que m'inspirait l'énoncé et de **la similarité à plusieurs de mes précédents projets. En effet, j'ai réutilisé une grande partie de leurs structures en ayant conscience que ça a grandement influencé mon implémentation, notamment sur la généricité des tests**. Cette généricité, si elle amène trop d'abstraction, peut être aisément réduite en enlevant les mécanismes d'implicites ou de subtype et en dupliquant le code.
+
+
 Je suis parti assez vite dans la rédaction du code. Je regrette de ne pas avoir tout simplement utiliser scala 3 (ou dotty) que j'affectionne beaucoup comme version de scala. D'ailleurs, j'ai fait beaucoup de tests mais aucun test de fail, ce qui manque je pense.
+
+
 Pour traduire au mieux les besoins, j'ai choisi de comprendre les us1, us2 et us3 comme des spécifications à traduire en tests bdd. Il sont enrichis dans le corps des scenarii (voir `application.BankServiceSpec` pour plus de détails).
 
 Pour lancer les tests, il suffit normalement de lancer "sbt test" dans le répertoire racine avec:
