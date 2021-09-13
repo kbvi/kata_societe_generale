@@ -4,10 +4,10 @@ Pour résoudre ce problème j'ai choisi de créer un service s'appelant *"BankSe
 L'architecture de cette solution s'inspire d'un pattern d'architecture en couche. Il est tout de même sans dépendance et approximé.
 
 
-Cependant, j'ai énormément profité de la généricité du projet que m'inspirait l'énoncé et de **la similarité à plusieurs de mes précédents projets. En effet, j'ai réutilisé une grande partie de leurs structures en ayant conscience que ça a grandement influencé mon implémentation, notamment sur la généricité des tests**. Cette généricité, si elle amène trop d'abstraction, peut être aisément réduite en enlevant les mécanismes d'implicites ou de subtype et en dupliquant le code.
+Cependant, j'ai énormément profité du libre champ que m'inspirait l'énoncé. En conséquence, j'ai utilisé de la généricité, comme je le fais habituellement, notamment sur la généricité des tests ou les i18ns. Et même si cette généricité amène trop d'abstraction, elle peut être aisément réduite en enlevant les mécanismes d'implicites ou de subtype et en dupliquant le code.
 
 
-Je suis parti assez vite dans la rédaction du code. Je regrette de ne pas avoir tout simplement utiliser scala 3 (ou dotty) que j'affectionne beaucoup comme version de scala. D'ailleurs, j'ai fait beaucoup de tests mais aucun test de fail, ce qui manque je pense.
+Je suis parti bien vite dans la rédaction du code. J'aurais pu tout simplement utiliser scala 3 (ou dotty), avec le temp ou le recul, que j'affectionne beaucoup comme version de scala. D'ailleurs, j'ai fait beaucoup de tests et pour les même raisons certains tests, comme ceux de fail, auraient également pu être rédigés.
 
 
 Pour traduire au mieux les besoins, j'ai choisi de comprendre les us1, us2 et us3 comme des spécifications à traduire en tests bdd. Il sont enrichis dans le corps des scenarii (voir `application.BankServiceSpec` pour plus de détails).
@@ -17,7 +17,7 @@ Pour lancer les tests, il suffit normalement de lancer "sbt test" dans le réper
 - scala en 2.13.6
 - un jdk 1.8.0_292
 
-J'ai utilisé Intellij et un template sbt pour créer ce projet rapidement. La version d'Intellij est Intellij IDEA 2019.1.3 . Il se peut qu'un compilateur d'IDE, même autre qu'intellij, ne comprenne pas toujours toute les syntaxes existantes en scala. C'est pourquoi je choisis de faire foi au compilateur et runner scala suscité qui est le premier repère pour un code fonctionnel.
+J'ai utilisé Intellij et un template sbt pour créer ce projet rapidement. La version d'Intellij est Intellij IDEA 2019.1.3 . Il se peut qu'un compilateur d'IDE, même autre qu'intellij, ne comprend pas toujours toutes les syntaxes existantes en scala. C'est pourquoi je choisis de faire foi au compilateur et runner scala suscité qui est le premier repère pour un code fonctionnel.
 
 Si vous faites un `sbt clean test` en racine du projet, vous obtiendrez normalement ceci:
 ```
