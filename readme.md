@@ -4,7 +4,7 @@ Pour résoudre ce problème j'ai choisi de créer un service s'appelant *"BankSe
 L'architecture de cette solution s'inspire d'un pattern d'architecture en couche. Il est tout de même sans dépendance et approximé.
 
 
-Cependant, j'ai énormément profité du libre champ que m'inspirait l'énoncé. En conséquence, j'ai utilisé de la généricité, comme je le fais habituellement, notamment sur la généricité des tests ou les i18ns. Et même si cette généricité amène trop d'abstraction, elle peut être aisément réduite en enlevant les mécanismes d'implicites ou de subtype et en dupliquant le code.
+Cependant, j'ai énormément profité du libre champ que m'inspirait l'énoncé. En conséquence, j'ai utilisé de la généricité, comme je le fais habituellement, notamment sur la généricité des tests ou les i18ns. Et même si celle-ci amène trop d'abstraction, elle peut être aisément réduite en enlevant les mécanismes d'implicites ou de subtype et en dupliquant le code.
 
 
 Je suis parti bien vite dans la rédaction du code. J'aurais pu tout simplement utiliser scala 3 (ou dotty), avec le temp ou le recul, que j'affectionne beaucoup comme version de scala. D'ailleurs, j'ai fait beaucoup de tests et pour les même raisons certains tests, comme ceux de fail, auraient également pu être rédigés.
